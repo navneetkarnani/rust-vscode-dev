@@ -1,0 +1,5 @@
+Use this repository as a devcontainer to use for rust development with VS Code. The microsoft base container is large.
+
+The environment uses the official rust image as the base, and installs git.
+
+The docker-compose file adds a volume for the code.
