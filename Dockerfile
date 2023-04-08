@@ -13,7 +13,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get --no-install-recommends install -y git curl
 
-RUN rustup component add clippy
+RUN rustup component add clippy rustfmt rust-docs
 
 RUN addgroup --gid 1000 ${USERNAME} && \
     adduser --uid 1000 --gid 1000 --disabled-password ${USERNAME}
