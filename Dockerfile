@@ -16,6 +16,7 @@ RUN rustup component add clippy rustfmt rust-docs
 
 RUN apt-get update && \
     apt-get --no-install-recommends install -y git curl && \
-    apt-get clean all
+    apt-get autoremove && \
+    apt-get clean
 
 USER ${USERNAME}
